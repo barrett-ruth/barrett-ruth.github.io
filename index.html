@@ -1,13 +1,39 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=https://barrettruth.com" />
-    <title>barrett ruth</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <title>redirecting...</title>
   </head>
   <body>
-    <p>
-      You're probably looking for my
-      <a href="https://barrettruth.com">website</a>.
-    </p>
+    <div class="redirect" style="text-align: center">
+        <div class="ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </a>
+    </div>
+    <a class="message" id="message" href="https://barrettruth.com">
+      barrettruth.com
+    </a>
+    <script>
+      const DELAY_MS = 2000;
+      setTimeout(function () {
+        window.location.href = "https://barrettruth.com";
+      }, DELAY_MS);
+
+      // display direct link if redirect fails 1 second later
+      setTimeout(function () {
+        const redirect = document.querySelector(".redirect");
+        const message = document.getElementById("message");
+
+        redirect.style.display = "none";
+        message.style.display = "block";
+      }, DELAY_MS + 1000);
+    </script>
   </body>
 </html>
