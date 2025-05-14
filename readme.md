@@ -1,1 +1,3 @@
-# [barrett-ruth.github.io](https://github.com/barrett-ruth/barrettruth.com)
+# barrett-ruth.github.io
+
+Go to https://github.com/barrett-ruth/barrettruth.com

@@ -8,32 +8,20 @@
     <title>redirecting...</title>
   </head>
   <body>
-    <div class="redirect" style="text-align: center">
-        <div class="ellipsis">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </a>
-    </div>
+    <div class="redirect" style="text-align: center"></div>
     <a class="message" id="message" href="https://barrettruth.com">
       barrettruth.com
     </a>
     <script>
-      const DELAY_MS = 2000;
-      setTimeout(function () {
-        window.location.href = "https://barrettruth.com";
-      }, DELAY_MS);
+      window.location.href = "https://barrettruth.com";
 
-      // display direct link if redirect fails 1 second later
       setTimeout(function () {
         const redirect = document.querySelector(".redirect");
         const message = document.getElementById("message");
 
         redirect.style.display = "none";
         message.style.display = "block";
-      }, DELAY_MS + 1000);
+      }, 1000);
     </script>
   </body>
 </html>
